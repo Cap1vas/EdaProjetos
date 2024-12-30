@@ -113,14 +113,14 @@ int main(){
     struct noDuplo * fim = NULL;
     int op;
     do{
-        cout<<"1 - Abrir comanda\n2 - Fazer pedido\n3 - Fechar conta\n4 - Sair\n";
-        cout<<"Escolha uma opçao\n";
+        cout<<"==================================\n1 - Abrir comanda\n2 - Fazer pedido\n3 - Fechar conta\n4 - Sair\n==================================\n";
+        cout<<"Escolha uma opção: \n";
         cin>>op;
         switch(op){
             case 1: chegadaCliente(&inicio,&fim);break;
             case 2: consumoCliente(&inicio);break;
             case 3: saidaCliente(&inicio,&fim);break;
-            case 4: break;
+            case 4: cout<<"Finalizando sessão...";break;
         }
 
     }while(op!=4);
